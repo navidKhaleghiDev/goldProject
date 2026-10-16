@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Net Gold">
+  <rect width="512" height="512" fill="#F7F4ED"/>
+  <g fill="#A88447">
+    <path d="M96 96h136v136H96z"/>
+    <path d="M280 96h136v136H280z"/>
+    <path d="M96 280h136v136H96z"/>
+    <path d="M280 280h136v136H280z"/>
+  </g>
+  <path d="M232 232h48v48h-48z" fill="#F7F4ED"/>
+</svg>

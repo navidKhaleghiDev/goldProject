@@ -1,0 +1,22 @@
+{
+  "name": "sheri-gold",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w @sheri-gold/web",
+    "dev:api": "npm run dev -w @sheri-gold/api",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build": "npm run build -w @sheri-gold/contracts && npm run build -w @sheri-gold/api && npm run build -w @sheri-gold/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.3"
+  }
+}

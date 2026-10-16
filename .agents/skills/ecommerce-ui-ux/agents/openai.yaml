@@ -1,0 +1,4 @@
+interface:
+  display_name: 'E-commerce UI/UX'
+  short_description: 'Design conversion-focused online stores'
+  default_prompt: 'Use $ecommerce-ui-ux to design or audit this e-commerce experience.'

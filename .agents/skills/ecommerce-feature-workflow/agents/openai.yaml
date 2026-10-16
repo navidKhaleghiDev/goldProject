@@ -1,0 +1,4 @@
+interface:
+  display_name: 'E-commerce Feature Workflow'
+  short_description: 'Coordinate commerce features end to end'
+  default_prompt: 'Use $ecommerce-feature-workflow to plan and implement this e-commerce feature end to end.'

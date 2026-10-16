@@ -1,0 +1,4 @@
+interface:
+  display_name: 'E-commerce Backend Development'
+  short_description: 'Build secure transactional commerce backends'
+  default_prompt: 'Use $ecommerce-backend-development to implement this e-commerce backend feature safely.'

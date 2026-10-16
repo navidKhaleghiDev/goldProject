@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Next.js Frontend Engineer'
+  short_description: 'Build typed production-ready React frontends'
+  default_prompt: 'Use $nextjs-frontend-engineer to build or improve this Next.js frontend.'

@@ -1,0 +1,509 @@
+<div id="sheri-gold-wireframe" dir="rtl">
+  <style>
+    #sheri-gold-wireframe {
+      display: grid;
+      gap: 16px;
+      justify-items: center;
+      color: #24322f;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    #sheri-gold-wireframe * {
+      box-sizing: border-box;
+    }
+    #sheri-gold-wireframe .sg-switcher {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    #sheri-gold-wireframe .sg-switcher button {
+      border: 1px solid #c9d8d4;
+      border-radius: 999px;
+      padding: 8px 16px;
+      background: #ffffff;
+      color: #174a43;
+      cursor: pointer;
+      font: inherit;
+    }
+    #sheri-gold-wireframe .sg-switcher button[aria-pressed='true'] {
+      background: #0a514a;
+      color: #ffffff;
+      border-color: #0a514a;
+    }
+    #sheri-gold-wireframe .sg-phone {
+      width: min(100%, 390px);
+      min-height: 740px;
+      overflow: hidden;
+      border: 1px solid #d7dedb;
+      border-radius: 28px;
+      background: #fbf7ed;
+      box-shadow: 0 18px 50px rgba(8, 55, 50, 0.16);
+      position: relative;
+    }
+    #sheri-gold-wireframe .sg-header {
+      background: #073f3b;
+      color: #ffffff;
+      padding: 16px 18px 14px;
+    }
+    #sheri-gold-wireframe .sg-brand-row,
+    #sheri-gold-wireframe .sg-section-head,
+    #sheri-gold-wireframe .sg-product-meta,
+    #sheri-gold-wireframe .sg-request-row,
+    #sheri-gold-wireframe .sg-dashboard-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    #sheri-gold-wireframe .sg-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    #sheri-gold-wireframe .sg-mark {
+      width: 36px;
+      height: 36px;
+      border: 1px solid #d8b354;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #f0cf75;
+      font-family: Georgia, serif;
+      font-weight: 500;
+    }
+    #sheri-gold-wireframe .sg-brand strong {
+      display: block;
+      color: #f2d57f;
+    }
+    #sheri-gold-wireframe .sg-brand small {
+      color: #d8e6e3;
+    }
+    #sheri-gold-wireframe .sg-icon-button {
+      width: 38px;
+      height: 38px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 12px;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.08);
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+    }
+    #sheri-gold-wireframe .sg-market {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    #sheri-gold-wireframe .sg-rate {
+      border: 1px solid rgba(240, 207, 117, 0.35);
+      border-radius: 12px;
+      padding: 9px 10px;
+      background: rgba(255, 255, 255, 0.07);
+    }
+    #sheri-gold-wireframe .sg-rate span,
+    #sheri-gold-wireframe .sg-rate small {
+      display: block;
+      color: #d8e6e3;
+    }
+    #sheri-gold-wireframe .sg-rate strong {
+      display: block;
+      margin: 3px 0;
+      color: #f2d57f;
+    }
+    #sheri-gold-wireframe .sg-content {
+      padding: 14px 14px 92px;
+    }
+    #sheri-gold-wireframe .sg-search {
+      position: relative;
+      margin-bottom: 12px;
+    }
+    #sheri-gold-wireframe .sg-search input {
+      width: 100%;
+      border: 1px solid #d9dedb;
+      border-radius: 14px;
+      background: #ffffff;
+      padding: 13px 42px 13px 14px;
+      color: #24322f;
+      font: inherit;
+    }
+    #sheri-gold-wireframe .sg-search svg {
+      position: absolute;
+      right: 14px;
+      top: 14px;
+      color: #6c7d78;
+    }
+    #sheri-gold-wireframe .sg-chip-row {
+      display: flex;
+      gap: 8px;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    #sheri-gold-wireframe .sg-chip {
+      flex: 0 0 auto;
+      border: 1px solid #d4c18b;
+      border-radius: 999px;
+      padding: 7px 11px;
+      background: #fffdf8;
+      color: #65552b;
+      font: inherit;
+    }
+    #sheri-gold-wireframe .sg-section-head {
+      margin: 4px 2px 10px;
+    }
+    #sheri-gold-wireframe .sg-section-head h2 {
+      margin: 0;
+      font-size: 17px;
+    }
+    #sheri-gold-wireframe .sg-filter {
+      border: 0;
+      background: transparent;
+      color: #0a514a;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font: inherit;
+    }
+    #sheri-gold-wireframe .sg-products {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    #sheri-gold-wireframe .sg-product {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid #e2ded3;
+      border-radius: 16px;
+      background: #ffffff;
+    }
+    #sheri-gold-wireframe .sg-product-image {
+      height: 142px;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at 50% 45%, #fffdf6 0, #f2e6c8 62%, #e4c976 100%);
+      color: #9b7420;
+    }
+    #sheri-gold-wireframe .sg-product-image svg {
+      width: 56px;
+      height: 56px;
+      stroke-width: 1.25;
+    }
+    #sheri-gold-wireframe .sg-product-body {
+      padding: 10px;
+    }
+    #sheri-gold-wireframe .sg-product h3 {
+      margin: 0 0 5px;
+      font-size: 14px;
+    }
+    #sheri-gold-wireframe .sg-product p {
+      margin: 0 0 8px;
+      color: #73817d;
+      font-size: 12px;
+    }
+    #sheri-gold-wireframe .sg-price {
+      color: #8b681c;
+      font-weight: 500;
+    }
+    #sheri-gold-wireframe .sg-heart {
+      border: 0;
+      background: transparent;
+      color: #0a514a;
+      padding: 2px;
+    }
+    #sheri-gold-wireframe .sg-bottom-nav {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      padding: 10px 8px 12px;
+      border-top: 1px solid #e2ded3;
+      background: rgba(255, 255, 255, 0.97);
+    }
+    #sheri-gold-wireframe .sg-bottom-nav button {
+      border: 0;
+      background: transparent;
+      color: #687772;
+      display: grid;
+      justify-items: center;
+      gap: 4px;
+      font: inherit;
+      font-size: 11px;
+      cursor: pointer;
+    }
+    #sheri-gold-wireframe .sg-bottom-nav button[aria-current='page'] {
+      color: #0a514a;
+    }
+    #sheri-gold-wireframe .sg-admin {
+      display: none;
+    }
+    #sheri-gold-wireframe .sg-admin-header {
+      padding: 18px;
+      background: #073f3b;
+      color: #ffffff;
+    }
+    #sheri-gold-wireframe .sg-admin-header small {
+      color: #d8e6e3;
+    }
+    #sheri-gold-wireframe .sg-admin-content {
+      padding: 14px 14px 86px;
+    }
+    #sheri-gold-wireframe .sg-metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    #sheri-gold-wireframe .sg-metric {
+      border: 1px solid #e2ded3;
+      border-radius: 14px;
+      background: #ffffff;
+      padding: 12px;
+    }
+    #sheri-gold-wireframe .sg-metric span {
+      display: block;
+      color: #71807c;
+      font-size: 12px;
+    }
+    #sheri-gold-wireframe .sg-metric strong {
+      display: block;
+      color: #0a514a;
+      margin-top: 5px;
+      font-size: 22px;
+    }
+    #sheri-gold-wireframe .sg-primary-action {
+      width: 100%;
+      border: 0;
+      border-radius: 14px;
+      padding: 12px 14px;
+      background: #0a514a;
+      color: #ffffff;
+      font: inherit;
+      margin-bottom: 15px;
+    }
+    #sheri-gold-wireframe .sg-requests {
+      display: grid;
+      gap: 9px;
+    }
+    #sheri-gold-wireframe .sg-request-row {
+      border: 1px solid #e2ded3;
+      border-radius: 14px;
+      background: #ffffff;
+      padding: 11px 12px;
+    }
+    #sheri-gold-wireframe .sg-request-row strong,
+    #sheri-gold-wireframe .sg-request-row small {
+      display: block;
+    }
+    #sheri-gold-wireframe .sg-request-row small {
+      color: #71807c;
+      margin-top: 3px;
+    }
+    #sheri-gold-wireframe .sg-status {
+      border-radius: 999px;
+      padding: 5px 9px;
+      background: #eef6f3;
+      color: #0a514a;
+      font-size: 11px;
+      white-space: nowrap;
+    }
+    @media (max-width: 380px) {
+      #sheri-gold-wireframe .sg-phone {
+        border-radius: 20px;
+      }
+      #sheri-gold-wireframe .sg-product-image {
+        height: 124px;
+      }
+    }
+  </style>
+
+  <div class="sg-switcher" aria-label="نمایش نقش">
+    <button type="button" data-role="customer" aria-pressed="true">نمای مشتری</button>
+    <button type="button" data-role="admin" aria-pressed="false">نمای مدیر</button>
+  </div>
+
+  <div class="sg-phone" aria-label="پیش‌نمایش موبایل شری گلد">
+    <section class="sg-customer">
+      <header class="sg-header">
+        <div class="sg-brand-row">
+          <div class="sg-brand">
+            <div class="sg-mark" aria-hidden="true">S</div>
+            <div><strong>SHERI GOLD</strong><small>شری گلد</small></div>
+          </div>
+          <button class="sg-icon-button" type="button" aria-label="سبد خرید، ۲ کالا">
+            <i data-lucide="shopping-bag" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="sg-market">
+          <div class="sg-rate">
+            <span>طلای ۱۸ عیار</span><strong>۷٬۲۴۰٬۰۰۰ تومان</strong
+            ><small>هر گرم · نمونه آزمایشی</small>
+          </div>
+          <div class="sg-rate">
+            <span>نقره ۹۹۹</span><strong>۱۱۵٬۰۰۰ تومان</strong><small>هر گرم · نمونه آزمایشی</small>
+          </div>
+        </div>
+      </header>
+      <main class="sg-content">
+        <label class="sg-search"
+          ><span class="sr-only">جستجوی محصولات</span><i data-lucide="search" aria-hidden="true"></i
+          ><input type="search" placeholder="جستجو در محصولات شری گلد"
+        /></label>
+        <div class="sg-chip-row" aria-label="دسته‌بندی‌ها">
+          <button class="sg-chip" type="button">همه</button>
+          <button class="sg-chip" type="button">انگشتر</button>
+          <button class="sg-chip" type="button">گردنبند</button>
+          <button class="sg-chip" type="button">طلای آب‌شده</button>
+        </div>
+        <div class="sg-section-head">
+          <h2>محصولات با قیمت مناسب</h2>
+          <button class="sg-filter" type="button">
+            <i data-lucide="sliders-horizontal" aria-hidden="true"></i> فیلتر
+          </button>
+        </div>
+        <div class="sg-products">
+          <article class="sg-product">
+            <div class="sg-product-image"><i data-lucide="gem" aria-hidden="true"></i></div>
+            <div class="sg-product-body">
+              <h3>آویز طلای مینیمال</h3>
+              <p>۱۸ عیار · ۱٫۲ گرم</p>
+              <div class="sg-product-meta">
+                <span class="sg-price">۹٬۸۰۰٬۰۰۰ تومان</span
+                ><button class="sg-heart" aria-label="افزودن به علاقه‌مندی">
+                  <i data-lucide="heart" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="sg-product">
+            <div class="sg-product-image"><i data-lucide="circle-dot" aria-hidden="true"></i></div>
+            <div class="sg-product-body">
+              <h3>انگشتر طلای ساده</h3>
+              <p>۱۸ عیار · ۱٫۶ گرم</p>
+              <div class="sg-product-meta">
+                <span class="sg-price">۱۲٬۴۰۰٬۰۰۰ تومان</span
+                ><button class="sg-heart" aria-label="افزودن به علاقه‌مندی">
+                  <i data-lucide="heart" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="sg-product">
+            <div class="sg-product-image"><i data-lucide="sparkles" aria-hidden="true"></i></div>
+            <div class="sg-product-body">
+              <h3>گوشواره طلای ظریف</h3>
+              <p>۱۸ عیار · ۲٫۱ گرم</p>
+              <div class="sg-product-meta">
+                <span class="sg-price">۱۶٬۹۰۰٬۰۰۰ تومان</span
+                ><button class="sg-heart" aria-label="افزودن به علاقه‌مندی">
+                  <i data-lucide="heart" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="sg-product">
+            <div class="sg-product-image"><i data-lucide="droplet" aria-hidden="true"></i></div>
+            <div class="sg-product-body">
+              <h3>طلای آب‌شده</h3>
+              <p>کد محصول SG-۳۰</p>
+              <div class="sg-product-meta">
+                <span class="sg-price">استعلام تأمین</span
+                ><button class="sg-heart" aria-label="افزودن به علاقه‌مندی">
+                  <i data-lucide="heart" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </main>
+      <nav class="sg-bottom-nav" aria-label="ناوبری مشتری">
+        <button type="button" aria-current="page">
+          <i data-lucide="house" aria-hidden="true"></i><span>خانه</span>
+        </button>
+        <button type="button">
+          <i data-lucide="layout-grid" aria-hidden="true"></i><span>دسته‌بندی‌ها</span>
+        </button>
+        <button type="button">
+          <i data-lucide="clipboard-list" aria-hidden="true"></i><span>درخواست‌های من</span>
+        </button>
+        <button type="button">
+          <i data-lucide="user-round" aria-hidden="true"></i><span>حساب کاربری</span>
+        </button>
+      </nav>
+    </section>
+
+    <section class="sg-admin">
+      <header class="sg-admin-header">
+        <div class="sg-dashboard-head">
+          <div>
+            <small>پنل مدیریت</small>
+            <h2>سلام، مدیر شری گلد</h2>
+          </div>
+          <div class="sg-mark" aria-hidden="true">S</div>
+        </div>
+      </header>
+      <main class="sg-admin-content">
+        <div class="sg-metrics">
+          <div class="sg-metric"><span>درخواست‌های جدید</span><strong>۱۲</strong></div>
+          <div class="sg-metric"><span>در حال پیگیری</span><strong>۸</strong></div>
+          <div class="sg-metric"><span>محصولات منتشرشده</span><strong>۳۰</strong></div>
+          <div class="sg-metric"><span>محصولات ناموجود</span><strong>۵</strong></div>
+        </div>
+        <button class="sg-primary-action" type="button">افزودن محصول جدید</button>
+        <div class="sg-section-head">
+          <h2>آخرین درخواست‌ها</h2>
+          <button class="sg-filter" type="button">مشاهده همه</button>
+        </div>
+        <div class="sg-requests">
+          <div class="sg-request-row">
+            <div><strong>درخواست خرید #۱۰۲۴</strong><small>۳ محصول · ۳۸٬۶۰۰٬۰۰۰ تومان</small></div>
+            <span class="sg-status">جدید</span>
+          </div>
+          <div class="sg-request-row">
+            <div><strong>درخواست تأمین #۲۰۸</strong><small>طلای آب‌شده SG-۳۰</small></div>
+            <span class="sg-status">در حال بررسی</span>
+          </div>
+          <div class="sg-request-row">
+            <div><strong>درخواست خرید #۱۰۲۳</strong><small>۲ محصول · ۲۶٬۷۰۰٬۰۰۰ تومان</small></div>
+            <span class="sg-status">در حال پیگیری</span>
+          </div>
+        </div>
+      </main>
+      <nav class="sg-bottom-nav" aria-label="ناوبری مدیر">
+        <button type="button" aria-current="page">
+          <i data-lucide="layout-dashboard" aria-hidden="true"></i><span>داشبورد</span>
+        </button>
+        <button type="button">
+          <i data-lucide="package" aria-hidden="true"></i><span>محصولات</span>
+        </button>
+        <button type="button">
+          <i data-lucide="clipboard-list" aria-hidden="true"></i><span>درخواست‌ها</span>
+        </button>
+        <button type="button">
+          <i data-lucide="settings" aria-hidden="true"></i><span>تنظیمات</span>
+        </button>
+      </nav>
+    </section>
+  </div>
+
+  <script>
+    (() => {
+      const root = document.getElementById('sheri-gold-wireframe');
+      const customer = root.querySelector('.sg-customer');
+      const admin = root.querySelector('.sg-admin');
+      root.querySelectorAll('[data-role]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const showAdmin = button.dataset.role === 'admin';
+          customer.style.display = showAdmin ? 'none' : 'block';
+          admin.style.display = showAdmin ? 'block' : 'none';
+          root.querySelectorAll('[data-role]').forEach((peer) => {
+            peer.setAttribute('aria-pressed', String(peer === button));
+          });
+          if (window.lucide) window.lucide.createIcons({ attrs: { width: 16, height: 16 } });
+        });
+      });
+    })();
+  </script>
+</div>
